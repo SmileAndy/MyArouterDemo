@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="62dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#4A4A4A"
+            android:textSize="23sp"
+            android:text="model_five" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="#ffdd2f61"
+            android:textSize="12sp"
+            android:text="更多" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/blue"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="故事名称"
+        android:textColor="#ff4a4a4a"
+        android:layout_marginBottom="3dp"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="故事简介，不超过15字"
+        android:textColor="#ff999999"
+        android:textSize="14sp"
+        android:layout_marginBottom="37dp"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_margin="5dp"
+        android:id="@+id/rv_five_model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

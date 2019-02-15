@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyArouterDemo</string>
+    <string name="tab_home">首页</string>
+    <string name="tab_chapter">音乐</string>
+    <string name="tab_meizi">舞蹈</string>
+    <string name="tab_project">绘画</string>
+    <string name="tab_navigation">用户</string>
+</resources>

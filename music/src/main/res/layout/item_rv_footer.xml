@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginBottom="10dp"
+   >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#34ffab"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"
+        android:text="恩恩"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="故事名称"
+       android:layout_marginLeft="5dp"
+        android:textColor="#ff4a4a4a"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="故事简介，不超过15字"
+        android:textColor="#ff999999"
+        android:textSize="14sp"
+        android:layout_marginLeft="5dp"
+
+
+        />
+</LinearLayout>

@@ -1,0 +1,77 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    api "com.android.support:design:$rootProject.supportLibraryVersion"
+
+    implementation 'com.alibaba:arouter-api:1.4.0'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.2.1'
+
+   // Plain MVP  https://github.com/sockeqwe/mosby
+    api "com.hannesdorfmann.mosby3:mvp:$rootProject.mvpVersion"
+
+    // https://github.com/JakeWharton/butterknife
+    api 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    //http请求
+    api var.retrofit
+    api var.converter_gson
+    api var.adapter_rxjava2
+    api 'io.reactivex.rxjava2:rxjava:2.2.2'
+    api 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    api 'com.jakewharton.rxbinding2:rxbinding:2.1.1'
+    api 'org.ligboy.retrofit2:converter-fastjson-android:2.1.0'
+    api 'com.squareup.okhttp3:okhttp:3.6.0'
+    api 'com.squareup.okhttp3:okhttp-urlconnection:3.6.0'
+
+    api 'com.github.adrielcafe:AndroidAudioConverter:0.0.8'
+
+
+    //下拉刷新，上啦加载
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-7'
+    api 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.4-7'
+
+    //事件总线
+    //RecyclerView的强大的BaseAdapter
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.28'
+    //glide图片加载框架
+    api 'com.github.bumptech.glide:glide:3.7.0'
+
+
+}

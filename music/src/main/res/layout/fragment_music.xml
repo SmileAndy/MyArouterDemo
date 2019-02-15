@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--&lt;!&ndash;上半部分页面&ndash;&gt;-->
+    <!--<android.support.v4.widget.NestedScrollView-->
+    <!--android:visibility="gone"-->
+    <!--android:id="@+id/pageOne"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:orientation="vertical">&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;<com.scwang.smartrefresh.layout.SmartRefreshLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/swipeRefreshLayout"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="match_parent">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<com.scwang.smartrefresh.header.MaterialHeader&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/header"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
+
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_layout_container2"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+
+    <!--<include layout="@layout/item_header"/>-->
+    <!--&lt;!&ndash;<include layout="@layout/item_four_model"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include layout="@layout/item_five_model"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include layout="@layout/item_ten_model"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<include layout="@layout/item_footer"/>&ndash;&gt;-->
+
+    <!--</LinearLayout>-->
+    <!--&lt;!&ndash;</com.scwang.smartrefresh.layout.SmartRefreshLayout>&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+
+    <!--</android.support.v4.widget.NestedScrollView>-->
+    <!--下半部分页面-->
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/swipeRefreshLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:id="@+id/header2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/pageTwoBehavior">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_layout_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+
+                    <include layout="@layout/item_header" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

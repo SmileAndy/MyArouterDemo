@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl"
+    >
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:text="按住说话"
+        android:textColor="@android:color/white" />
+
+
+    <Button
+        android:layout_below="@+id/button"
+        android:id="@+id/btn_convert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@color/blue"
+        android:layout_marginTop="10dp"
+        android:text="转码"/>
+</RelativeLayout>
